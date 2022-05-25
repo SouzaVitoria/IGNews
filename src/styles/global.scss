@@ -2,6 +2,7 @@
   --white: #fff;
   --gray-100: #e1e1e6;
   --gray-300: #a8a8b3;
+  --gray-800: #29292e;
   --gray-900: #121214;
   --cyan-500: #61dafb;
   --yellow-500: #eba417;
@@ -14,12 +15,12 @@
 }
 
 // font-size default 16px (Desktop)
-html { 
+html {
   @media (max-width: 1080px) {
-    font-size: 93.75% // 15px
+    font-size: 93.75%; // 15px
   }
   @media (max-width: 720px) {
-    font-size: 87.5% // 14px
+    font-size: 87.5%; // 14px
   }
 }
 
@@ -36,7 +37,8 @@ button {
   font: 400 1rem "Roboto", sans-serif;
 }
 
-button {
+button,
+a {
   cursor: pointer;
 }
 
