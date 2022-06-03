@@ -1,0 +1,21 @@
+{
+  "id": "25e0edec-fbbf-4231-9a97-a7c6d3deb774",
+  "uid": "dolor-aut-minus",
+  "type": "posts",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Brand web-enabled e-business",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Consectetur excepteur commodo elit exercitation aute commodo nulla officia anim. Veniam laboris sunt officia occaecat voluptate magna consectetur anim.",
+        "spans": []
+      }
+    ]
+  }
+}
