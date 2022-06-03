@@ -1,7 +1,22 @@
 import Head from "next/head"
+import { GetStaticProps } from "next"
+import Prismic from "@prismicio/client"
+import { RichText } from "prismic-dom"
+import { getPrismicClient } from "../../services/prismic"
 import styles from "./posts.module.scss"
 
-export default function Posts() {
+type Post = {
+  slug: string
+  title: string
+  excerpt: string,
+  updatedAt: string
+}
+
+interface PostsProps {
+  posts: Post[]
+}
+
+export default function Posts({ posts }: PostsProps) {
   return (
     <>
       <Head>
@@ -10,29 +25,46 @@ export default function Posts() {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-          <a href="#">
-            <time> 02/06/2022 </time>
-            <strong> Título do Post </strong>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-            </p>
-          </a>
-          <a href="#">
-            <time> 02/06/2022 </time>
-            <strong> Título do Post </strong>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-            </p>
-          </a>
-          <a href="#">
-            <time> 02/06/2022 </time>
-            <strong> Título do Post </strong>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-            </p>
-          </a>
+          {
+            posts.map(post => (
+              <a key={post.slug} href="#">
+                <time> {post.updatedAt} </time>
+                <strong> {post.title} </strong>
+                <p> {post.excerpt} </p>
+              </a>
+            ))
+          }
         </div>
       </main>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient()
+  const response = await prismic.query([
+    Prismic.predicates.at("document.type", "posts")
+  ], {
+    fetch: ["posts.title", "posts.content"],
+    pageSize: 10
+  })
+
+  const posts = response.results.map(post => {
+    return {
+      slug: post.uid,
+      title: RichText.asText(post.data.title),
+      excerpt: post.data.content.find(content => content.type === "paragraph")?.text ?? "",
+      updatedAt: new Date(post.last_publication_date).toLocaleDateString("pt-BR", {
+        day: "2-digit",
+        month: "long",
+        year: "numeric"
+      })
+    }
+  })
+
+  return {
+    props: {
+      posts
+    }
+  }
 }
