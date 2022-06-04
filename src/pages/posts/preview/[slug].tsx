@@ -55,13 +55,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
 
 export const getStaticPaths: GetStaticPaths = () => {
   return {
-    paths: [
-      {
-        params: {
-          slug: "css3e-a-terceira-mais-nova-versao-das-famosascascading"
-        }
-      }
-    ],
+    paths: [],
     fallback: "blocking"
   }
 }
