@@ -45,7 +45,7 @@ export default NextAuth({
         return { ...session, activeSubscription: null }
       }
     },
-    async signIn(user, account, profile) {
+    async signIn(user) {
       const { email } = user.user
 
       try {
