@@ -1,3 +1,6 @@
+import { useEffect } from "react"
+import { useRouter } from "next/router"
+import { useSession } from "next-auth/react"
 import { GetStaticProps } from "next"
 import Head from "next/head"
 import Link from "next/link"
@@ -15,6 +18,15 @@ interface PostPreviewProps {
 }
 
 export default function PostPreview({ post }: PostPreviewProps) {
+  const { data: session } = useSession();
+  const router = useRouter()
+
+  useEffect(() => {
+    if (session?.activeSubscription) {
+      router.push(`/posts/${post.slug}`)
+    }
+  }, [session])
+
   return (
     <>
       <Head>
