@@ -1,5 +1,19 @@
 # IG.News
 
+## ✨ **Sobre o projeto**
+
+O projeto é uma plataforma de assinatura para ver conteúdos completos de posts publicados.
+O usuário precisa estar logado para ver a lista de posts e o preview de cada post. Para ter acesso ao conteúdo completo de cada post, a assinatura precisa estar ativa.
+
+**Funcionalidades (Informações):**
+
+- Login com GitHub;
+- Assinaturas mensais;
+- Inscrições e pagamentos de assinaturas via checkout do Stripe;
+- Cadastros dos posts via Prismic CMS;
+
+---
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
