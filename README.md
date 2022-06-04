@@ -11,6 +11,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
+## 🖥 Layout
+
+[Home](/docs/images/home.png)
+[Posts](/docs/images/posts.png)
+[Post Preview](/docs/images/post-preview.png)
+[Post](/docs/images/post.png)
+[Subscription - Stripe Checkout](/docs/images/stripe-checkout.png)
+
+---
+
 📚 Ferramentas, Bibliotecas e Pacotes
 
 - [Stripe](https://stripe.com/br)
