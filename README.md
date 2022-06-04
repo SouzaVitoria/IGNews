@@ -8,10 +8,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org)
 - [Sass](https://sass-lang.com/)
+- [Fauna DB](https://fauna.com/)
+- [Stripe](https://stripe.com/br)
+- [Prismic CMS](https://prismic.io/)
 
 ---
 
-## 🖥 Layout
+## 🖥 **Layout**
 
 [Home](/docs/images/home.png)
 [Posts](/docs/images/posts.png)
@@ -21,16 +24,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-📚 Ferramentas, Bibliotecas e Pacotes
+## 📚 **Ferramentas, Bibliotecas e Pacotes**
 
-- [Stripe](https://stripe.com/br)
-- [Fauna DB](https://fauna.com/)
 - [Prismic CMS](https://prismic.io/)
   > Rode o comando `yarn run slicemachine` para executar localmente e conseguir criar os **Custom Types**
 
 ---
 
-✏ Anotações (Conhecimento)
+## ✏ **Anotações (Conhecimento)**
 
 - Gerar páginas estáticas: (Temos 3 formatos mais comuns para trabalhar com isso)
   1.  Gerar as páginas estáticas durante a Build
@@ -40,6 +41,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-## 📚 Extensões do VSCode
+## 📚 **Extensões do VSCode**
 
 - [CSS Modules](https://marketplace.visualstudio.com/items?itemName=clinyong.vscode-css-modules)
