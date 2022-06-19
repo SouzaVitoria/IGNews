@@ -53,6 +53,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   3.  Metade um e metade outro
       > Passar as páginas para o `getStaticPaths`, ele só existe em páginas que tem parâmetros dinâmicos. Como as outras páginas não tem parametrização, então o Next já gera de forma estática normalmente.
 
+- `_app` é um componente que sempre fica em volta de tudo. Esse componente é carregado toda vez que o usuário mudar de página
+- `_document` funciona de forma semelhante ao `_app`, ou seja, é um componente que também fica em volta de tudo, mas ele carrega uma única vez e não toda vez que o usuáriro mudar de página.
+  - Esse componente precisa ser componente de classe.
+  - É semelhante ao `index.html` do `create-react-app`, mas os elementos precisam ser importados direto do Next.
+
 ---
 
 ## 📚 **Extensões do VSCode**
