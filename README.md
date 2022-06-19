@@ -71,6 +71,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Testes garantem confiança na hora de dar manutenção no código futuro, ou seja, se fizermos alteração em um componente, garante se ele continua funcionando em todos os lugares que ele está sendo utilizado.
 
+### **Anotações (Conhecimento)**
+
 Temos 3 principais tipos de testes:
 
 - **Teste Unitário:** garante que o componente/funcionalidade específica da aplicação esteja funcionando desconectada de todo o restante. O teste unitário testa sempre uma função, recebe parâmetros e tem um retorno.
@@ -83,7 +85,9 @@ Temos 3 principais tipos de testes:
 
   > _**Exemplo:** Acessar página de login > Digitar e-mail > Digitar senha > clicar no botão de login > Verificar se o usuário foi direcionado para o dashboard_
 
-- Testes assíncronos: https://testing-library.com/docs/dom-testing-library/api-async/
+---
+
+- **Testes assíncronos:** https://testing-library.com/docs/dom-testing-library/api-async/
 
 - Existem 3 tipos de métodos que podemos importar do **`screen`**, `getByText()`, `queryByText()` e `findByText()`
 
