@@ -66,7 +66,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-## **Testes**
+## 📈 **Testes**
 
 Testes garantem confiança na hora de dar manutenção no código futuro, ou seja, se fizermos alteração em um componente, garante se ele continua funcionando em todos os lugares que ele está sendo utilizado.
 
@@ -84,4 +84,4 @@ Temos 3 principais tipos de testes:
 
 ### **Bibliotecas:**
 
-Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest -D`
+Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest jest-environment-jsdom -D`
