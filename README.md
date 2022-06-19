@@ -83,6 +83,13 @@ Temos 3 principais tipos de testes:
 
   > _**Exemplo:** Acessar página de login > Digitar e-mail > Digitar senha > clicar no botão de login > Verificar se o usuário foi direcionado para o dashboard_
 
+- Testes assíncronos: https://testing-library.com/docs/dom-testing-library/api-async/
+
+- Existem 3 tipos de métodos que podemos importar do **`screen`**, `getByText()`, `queryByText()` e `findByText()`
+  - `get`: procuram um elemento de forma assíncrona, ou seja, se não estiver em tela no momento em que o código executar, ele não vai aguardar esperar e vai dar erro.
+  - `query`: procura pelo elemento de forma assíncrona também, mas se não encontrar o elemento, ele não dá erro.
+  - `find`: fica observando para ver se o elemento irá aparecer em algum momento e se não encontrar ele também vai dar erro
+
 ### **Bibliotecas:**
 
 Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest jest-environment-jsdom -D`
