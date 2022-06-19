@@ -58,3 +58,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 📚 **Extensões do VSCode**
 
 - [CSS Modules](https://marketplace.visualstudio.com/items?itemName=clinyong.vscode-css-modules)
+
+---
+
+## **Testes**
+
+Testes garantem confiança na hora de dar manutenção no código futuro, ou seja, se fizermos alteração em um componente, garante se ele continua funcionando em todos os lugares que ele está sendo utilizado.
+
+Temos 3 principais tipos de testes:
+
+- **Teste Unitário:** garante que o componente/funcionalidade específica da aplicação esteja funcionando desconectada de todo o restante. O teste unitário testa sempre uma função, recebe parâmetros e tem um retorno.
+
+- **Teste de Integração:** testa como duas ou mais funcionalidades funcionam juntas.
+
+  > _**Exemplo:** Listagem de usuário e Adicionar Usuário, testa se quando é adicionado um usuário, ele está aparecendo na listagem?_
+
+- **Teste E2E (ponta a ponta):** testa a aplicação da maneira que o usuário costuma utiliza-la, ou seja, é um roteiro que o usuário faz na aplicação.
+
+  > _**Exemplo:** Acessar página de login > Digitar e-mail > Digitar senha > clicar no botão de login > Verificar se o usuário foi direcionado para o dashboard_
+
+### **Bibliotecas:**
+
+Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest -D`
