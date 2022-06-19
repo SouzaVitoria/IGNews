@@ -48,6 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## ✏ **Anotações (Conhecimento)**
 
 - Gerar páginas estáticas: (Temos 3 formatos mais comuns para trabalhar com isso)
+
   1.  Gerar as páginas estáticas durante a Build
   2.  Gerar as páginas estáticas no primeiro acesso
   3.  Metade um e metade outro
@@ -85,3 +86,5 @@ Temos 3 principais tipos de testes:
 ### **Bibliotecas:**
 
 Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest jest-environment-jsdom -D`
+
+- `yarn add identity-obj-proxy -D`: é a biblioteca recomendada pela documentação para entender arquivos css-modules no jest
