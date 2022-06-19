@@ -88,3 +88,4 @@ Temos 3 principais tipos de testes:
 Instale as dependências de desenvolvimento `yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest jest-environment-jsdom -D`
 
 - `yarn add identity-obj-proxy -D`: é a biblioteca recomendada pela documentação para entender arquivos css-modules no jest
+- `yarn add jest-mock -D`: é uma série de utilidades/funcionalidades que pode trazer a mais quando utiliza TS com Jest
